@@ -3,6 +3,18 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Miten suorittaa tsoha?</title>
+    <style type="text/css">
+      body {
+        counter-reset: homework;
+      }
+      p.homework:before {
+        content: "Kotitehtävä " counter(homework) ": ";
+        counter-increment: homework;
+      }
+      p.homework {
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
 
@@ -35,6 +47,26 @@
       <h2>Syventää oppimistavoitteita</h2>
 
       <p>Oppimistavoitteiden syventyessä mennään jo kurssin päämäärän ulkopuolelle, mutta myös mielenkiintoiselle alueelle.</p>
+
+    </section>
+
+    <section>
+
+      <h1>Tietokantaohjelmointi</h1>
+
+      <p>Tietokantasovellusta tehdessä tietokantaohjelmointi on, yllätys yllätys, tärkeässä osassa.</p>
+
+      <h2>Minimivaatimus</h2>
+
+      <p><q>Osaa pääpiirteissään tietokannan ohjelmakäytön periaatteet ja soveltaa niitä suppeasti</q></p>
+
+      <p>Lähtökohtana on se, että opiskelija on syöttänyt kyselyjään SQL-traineriin ja saanut sieltä taulukkomuotoisen vastauksen.</p>
+
+      <h3>SQLite</h3>
+
+      <p>Ensikosketuksena SQL-trainerin ulkopuolella tietokantoihin on <a href="https://www.sqlite.org/">sqlite</a>-tietokantamoottori. sqlite3 löytyy laitoksen ubuntu-palvelimilta ja se on helppo asentaa myös omalle koneelle.</p>
+
+      <p class="homework">Asenna omalle koneelle SQLite3.</p>
 
     </section>
 
