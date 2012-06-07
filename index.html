@@ -6,6 +6,9 @@
     <style type="text/css">
       body {
         counter-reset: homework;
+        background-color: #999;
+        margin: 0;
+        padding: 0;
       }
       p.homework:before {
         content: "Kotitehtävä " counter(homework) ": ";
@@ -13,6 +16,28 @@
       }
       p.homework {
         font-style: italic;
+      }
+      section {
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto 0 auto;
+        padding: 1em;
+        border-left: thin dashed black;
+        border-right: thin dashed black;
+        background-color: #fff;
+      }
+      section:nth-of-type(odd) {
+        background-color: #eee;
+      }
+      header, footer {
+        text-align: center;
+        background: #ccc;
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto 0 auto;
+        border-left: thin dashed black;
+        border-right: thin dashed black;
+        padding: 1em;
       }
     </style>
   </head>
